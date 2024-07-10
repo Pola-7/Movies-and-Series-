@@ -1,0 +1,170 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+img {
+    display: flex;
+    background-size: cover;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    background: rgba(128,128,128,0.3);
+    border-radius: 25px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type = text]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #0077ff;
+    background: none;
+    padding: 10px;
+    color: white;
+}
+
+input[type=text].name {
+    top: 55px;
+    left: 40px;
+}
+
+input[type=text].rate {
+    top: 110px;
+    left: 40px;
+}
+
+input[type=text].info {
+    top: 165px;
+    left: 40px;
+}
+
+input[type=file].image{
+    top: 220px;
+    left: 40px;
+}
+
+.field-group{
+    width:auto;
+}
+
+.file-field{
+    width:0;
+    height:0;
+    opacity:0;
+    z-index:-1;
+}
+.file-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: wheat;
+    transition: 0.3s ease;
+}
+
+.fa fa-upload {
+    color: darkorange;
+}
+
+
+.file-field:focus + .file-label , .file-label:hover {
+    color:#ffffff;
+}
+
+.file-label.border{
+    border: 2px solid #229144;
+
+}
+
+
+.file-field:focus + .file-label.border, .file-label.border:hover {
+    color: #0ac744;
+}
+
+.file-label.background{
+    background:#229144;
+    color:#ffffff;
+}
+
+
+.file-field:focus + .file-label.background, .file-label.background:hover {
+    background: #0ac744;
+    color:#ffffff;
+}
+
+input[type=submit] {
+    position: absolute;
+    top: 340px;
+    left: 110px;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background: #0077ff;
+}
+
+input[type=submit]:hover {
+    background: white;
+    color: #0077ff;
+}
+
+
+
+.radio{
+
+    display:inline-block;
+    justify-content:center;
+    margin:10px 10px 0px 60px; 
+    font-size:1.3em;
+    font-weight:500;
+    color:white;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+
+.radio input[type=radio]:checked ~ span::after {
+    transform: translate(-50%,-50%)scale(1);
+}
+
+
+.radio + .radio{
+    margin-left:20px;
+}
+
+.box form div i {
+    font-size: 16px;
+    margin: 9px 14px 30px;
+    color: wheat;
+}
+
+.box form div i:hover {
+    color: #ffffff;
+}
+
